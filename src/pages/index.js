@@ -31,7 +31,7 @@ export default function Home() {
         </p>
 
         <Grid>
-          <Card>
+          <Card className="card1">
             <a href="https://nextjs.org/docs">
               <h2>Documentation &rarr;</h2>
               <p>Find in-depth information about Next.js features and API.</p>
