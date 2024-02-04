@@ -1,0 +1,98 @@
+.article {
+    grid-column: span 3 / span 3; // equivalent to lg:col-span-3
+    background-color: #ffffff; // bg-white
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); // shadow-lg
+    border-radius: 0.5rem; // rounded-lg
+    overflow: hidden;
+
+    &__main {
+        max-width: 1280px; // equivalent to max-w-7xl
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.25rem; // equivalent to p-5
+        margin-top: 2.5rem; // equivalent to mt-10
+        margin-bottom: 2.5rem; // equivalent to mb-10
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr)); // lg:grid-cols-4
+        gap: 1.25rem; // gap-5
+    }
+
+    &__header {
+        margin-bottom: 1rem; // equivalent to mb-4
+    }
+
+    &__image {
+        width: 100%; // w-full
+        height: 16rem; // h-64
+        object-fit: cover; // object-cover
+        object-position: center; // object-center
+    }
+
+    &__title {
+        font-size: 1.5rem; // text-2xl
+        font-weight: 700; // font-bold
+        color: #1a202c; // text-gray-900
+        margin-bottom: 1rem; // mb-4
+    }
+
+    &__description {
+        padding: 1rem; // p-4
+        font-weight: 700; // font-bold
+        color: #718096; // text-gray-600
+    }
+
+    &__content {
+        padding: 1rem; // p-4
+
+        h2 {
+            font-size: 1.125rem; // text-lg
+            font-weight: 600; // font-semibold
+            color: #1a202c; // text-gray-900
+        }
+
+        p {
+            margin-top: 1rem; // mt-4
+            font-size: 1rem; // text-base
+            color: #718096; // text-gray-600
+        }
+    }
+
+    &__aside {
+        grid-column: span 1 / span 1; // lg:col-span-1
+        background-color: #ffffff; // bg-white
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); // shadow-lg
+        border-radius: 0.5rem; // rounded-lg
+        overflow: hidden;
+        margin-top: 0; // lg:mt-0
+        margin-top: 1.25rem; // mt-5
+
+        @media (min-width: 1024px) {
+            margin-top: 0;
+        }
+
+        &_content {
+            padding: 1rem; // p-4
+            display: flex;
+            justify-content: center; // justify-center
+            align-items: center; // items-center
+            height: 600px; // h-[600px]
+
+            &_image {
+                width: 100%; // w-full
+                height: 100%; // h-full
+                object-fit: cover; // object-cover
+                object-position: center; // object-center
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 2rem; // mt-8
+        padding: 1rem; // p-4
+
+        &_info {
+            font-size: 0.875rem; // text-sm
+            color: #a0aec0; // text-gray-500
+        }
+    }
+}

@@ -1,44 +1,60 @@
 import Container from '../components/Container';
 
+import styles from './../styles/Article.module.scss';
+
 export default function Page() {
     return (
         <Container>
-            <div className="max-w-7xl mx-auto p-5 mt-10 mb-10">
-                <div className="lg:grid lg:grid-cols-4 gap-5">
-                    <article className="lg:col-span-3 bg-white shadow-lg rounded-lg overflow-hidden">
-                        <header>
-                            <h1 className="text-2xl font-bold text-gray-900 mb-4">Exploring the Utility-First Paradigm in Tailwind CSS</h1>
-                            <img className="w-full h-64 object-cover object-center" src="https://via.placeholder.com/1000x600" alt="Tailwind CSS Image"/>
-                        </header>
+            <div className={styles.article__main}>
 
-                        <section className="mt-6 p-4">
-                            <p className="text-md text-gray-600">
-                                Discover the flexibility and efficiency of using Tailwind CSS, a highly customizable utility-first CSS framework that allows you to build designs directly in your markup.
-                            </p>
-                        </section>
+                <article className={styles.article}>
 
-                        <section className="mt-6 p-4">
-                            <h2 className="text-lg font-semibold text-gray-900">Introduction to Tailwind</h2>
-                            <p className="mt-2 text-md text-gray-600">
-                                Tailwind CSS is revolutionizing the way developers write CSS by providing a set of utility classes that can be composed to create complex designs without leaving your HTML.
-                            </p>
-                            <p className="mt-4 text-md text-gray-600">
-                                Instead of writing custom CSS styles, Tailwind allows for rapid UI development with its pre-defined classes. The utility-first approach minimizes the need to write custom CSS, thus speeding up the development process.
-                            </p>
-                        </section>
+                    <header className={styles.article__header}>
 
-                        <footer className="mt-8 p-4">
-                            <small className="text-sm text-gray-500">Published on April 15, 2023</small>
-                        </footer>
-                    </article>
+                        <h1 className={styles.article__title}>
+                            Exploring the Utility-First Paradigm in Tailwind CSS using @apply
+                        </h1>
 
-                    <aside className="lg:col-span-1 bg-white shadow-lg rounded-lg overflow-hidden lg:mt-0 mt-5">
-                        <div className="p-4 flex justify-center items-center h-600">
-                            <img src="https://via.placeholder.com/300x600" alt="Banner" className="w-full h-full object-cover object-center"/>
-                        </div>
-                    </aside>
-                </div>
+                        <img
+                            className={styles.article__image}
+                            src="https://via.placeholder.com/1000x600"
+                            alt="Tailwind CSS Image"
+                        />
+                    </header>
+
+                    <section className={styles.article__description}>
+                        Discover the flexibility and efficiency of using Tailwind CSS, a highly customizable utility-first CSS framework that allows you to build designs directly in your markup.
+                    </section>
+
+                    <section className={styles.article__content}>
+                        <h2>
+                            Introduction to Tailwind
+                        </h2>
+                        <p>
+                            Tailwind CSS is revolutionizing the way developers write CSS by providing a set of utility classes that can be composed to create complex designs without leaving your HTML.
+                        </p>
+                        <p>
+                            Instead of writing custom CSS styles, Tailwind allows for rapid UI development with its pre-defined classes. The utility-first approach minimizes the need to write custom CSS, thus speeding up the development process.
+                        </p>
+                    </section>
+
+                    <footer className={styles.article__footer}>
+                        <small className={styles.article__footer_info}>
+                            Published on 02. 02. 2024.
+                        </small>
+                    </footer>
+                </article>
+
+                <aside className={styles.article__aside}>
+                    <div className={styles.article__aside_content}>
+                        <img
+                            className={styles.article__aside_content_image}
+                            src="https://via.placeholder.com/300x600"
+                            alt="Banner"
+                        />
+                    </div>
+                </aside>
             </div>
         </Container>
-    )
+    );
 }
