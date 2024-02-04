@@ -2,8 +2,8 @@ module.exports = {
   // Enable JIT mode for faster builds and smaller file sizes in development
   mode: 'jit',
   content: [
-      './pages/**/*.{js,ts,jsx,tsx}', // Path to your pages
-      './components/**/*.{js,ts,jsx,tsx}', // Path to your components
+      './src/pages/**/*.{js,ts,jsx,tsx}', // Path to your pages
+      './src/components/**/*.{js,ts,jsx,tsx}', // Path to your components
   ],
   theme: {
     extend: {

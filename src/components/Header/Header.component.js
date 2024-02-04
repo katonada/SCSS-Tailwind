@@ -1,4 +1,4 @@
-// import styles from './Header.module.scss';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -7,9 +7,9 @@ export default function Header() {
         <h1 className="text-xl font-bold text-gray-900">My Next.js Blog</h1>
         <nav>
           <ul className="flex space-x-4">
-            <li><a href="/scss" className="text-gray-600 hover:text-gray-900 transition-colors">SCSS</a></li>
-            <li><a href="/tailwind-inline" className="text-gray-600 hover:text-gray-900 transition-colors">Tailwind Inline</a></li>
-            <li><a href="/tailwind-apply" className="text-gray-600 hover:text-gray-900 transition-colors">Tailwind Apply</a></li>
+            <li><Link href="/scss" className="text-gray-600 hover:text-gray-900 transition-colors">SCSS</Link></li>
+            <li><Link href="/tailwind-inline" className="text-gray-600 hover:text-gray-900 transition-colors">Tailwind Inline</Link></li>
+            <li><Link href="/tailwind-apply" className="text-gray-600 hover:text-gray-900 transition-colors">Tailwind Apply</Link></li>
           </ul>
         </nav>
       </div>

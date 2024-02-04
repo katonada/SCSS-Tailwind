@@ -1,4 +1,4 @@
-// import styles from './Footer.module.scss';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-5">
         <nav>
           <ul className="flex justify-center space-x-6">
-            <li><a href="/scss" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">SCSS</a></li>
-            <li><a href="/tailwind-inline" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Tailwind Inline</a></li>
-            <li><a href="/tailwind-apply" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Tailwind Apply</a></li>
+            <li><Link href="/scss" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">SCSS</Link></li>
+            <li><Link href="/tailwind-inline" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Tailwind Inline</Link></li>
+            <li><Link href="/tailwind-apply" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Tailwind Apply</Link></li>
           </ul>
         </nav>
       </div>
