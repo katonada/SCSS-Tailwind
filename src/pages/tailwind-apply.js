@@ -1,6 +1,6 @@
 import Container from '../components/Container';
 
-import styles from './../styles/ArticleTW.module.scss';
+import styles from './../styles/TwArticle.module.scss';
 
 export default function Page() {
     return (
