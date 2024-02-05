@@ -40,7 +40,7 @@ export default function Page() {
 
                     <footer className={styles.article__footer}>
                         <small className={styles.article__footer_info}>
-                            Published on 02. 02. 2024.
+                            Short content created with assistance from ChatGPT
                         </small>
                     </footer>
                 </article>

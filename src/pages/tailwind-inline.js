@@ -28,7 +28,7 @@ export default function Page() {
 
                     <footer className="mt-8 p-4">
                         <small className="text-sm text-gray-500">
-                            Published on April 15, 2023
+                            Short content created with assistance from ChatGPT
                         </small>
                     </footer>
                 </article>

@@ -1,18 +1,16 @@
 import Container from '../components/Container';
 
-import styles from './../styles/Article.module.scss';
-
 export default function Page() {
     return (
         <Container>
-            <div className={styles.article__main}>
+            <div className="article__main">
 
-                <article className={styles.article}>
+                <article className="article">
 
                     <header className="article__header">
 
                         <h1 className="article__title">
-                            Exploring the Utility-First Paradigm in Tailwind CSS using @apply
+                            Leveraging the Power of SCSS for Scalable and Maintainable CSS
                         </h1>
 
                         <img
@@ -23,24 +21,24 @@ export default function Page() {
                     </header>
 
                     <section className="article__description">
-                        Discover the flexibility and efficiency of using Tailwind CSS, a highly customizable utility-first CSS framework that allows you to build designs directly in your markup.
+                        Dive into the advantages of SCSS, a preprocessor scripting language that extends CSS with powerful features like variables, nesting, and mixins for a more organized and efficient styling workflow.
                     </section>
 
                     <section className="article__content">
                         <h2>
-                            Introduction to Tailwind
+                            Introduction to SCSS
                         </h2>
                         <p>
-                            Tailwind CSS is revolutionizing the way developers write CSS by providing a set of utility classes that can be composed to create complex designs without leaving your HTML.
+                            SCSS, or Sassy CSS, introduces a versatile syntax that's compatible with all versions of CSS but elevates it with the addition of features that simplify and enhance the styling process. This preprocessor adds a robust layer of functionality, enabling developers to write more readable and maintainable code.
                         </p>
                         <p>
-                            Instead of writing custom CSS styles, Tailwind allows for rapid UI development with its pre-defined classes. The utility-first approach minimizes the need to write custom CSS, thus speeding up the development process.
+                            By utilizing SCSS, developers benefit from features such as variables for color values and font stacks, nesting selectors to reflect the HTML structure, and mixins for reusable sets of styles. This leads to a more strategic approach to styling, significantly reducing redundancy, and streamlining the management of complex stylesheets.
                         </p>
                     </section>
 
                     <footer className="article__footer">
                         <small className="article__footer_info">
-                            Published on 02. 02. 2024.
+                            Short content created with assistance from ChatGPT
                         </small>
                     </footer>
                 </article>
