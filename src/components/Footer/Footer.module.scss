@@ -1,23 +1,35 @@
 .footer {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2.5rem; // equivalent to tailwind's mt-10
 
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    &__container {
+        max-width: 80rem; // equivalent to tailwind's max-w-7xl
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1.25rem; // equivalent to tailwind's px-5
+        padding-left: 1.25rem;
+    }
 
-  img {
-    margin-left: 0.5rem;
-  }
+    &__nav {}
 
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem; // equivalent to tailwind's space-x-6
+    }
 
-.footerLogo {
-  height: 1em;
+    &__item {}
+
+    &__link {
+        font-size: .875rem; // equivalent to text-sm in Tailwind
+        color: #718096; // equivalent to text-gray-600
+        transition: color 0.15s ease-in-out;
+
+        &:hover {
+            color: #1a202c; // equivalent to hover:text-gray-900
+        }
+    }
 }

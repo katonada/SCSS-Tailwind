@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Container from '../components/Container';
+import Layout from '../layout/Main.component';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
 import Grid from '../components/Grid';
@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <Container>
+    <Layout>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -64,6 +64,6 @@ export default function Home() {
       </Main>
 
       <Footer />
-    </Container>
+    </Layout>
   )
 }
