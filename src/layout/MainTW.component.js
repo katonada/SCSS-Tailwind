@@ -1,8 +1,8 @@
-import Header from '../components/Header/Header.component';
-import Footer from '../components/Footer/Footer.component';
+import Header from '../components/Header/HeaderTW.component';
+import Footer from '../components/Footer/FooterTW.component';
 import Container from '../components/Container';
 
-export default function Layout({ children }) {
+export default function LayoutTW({ children }) {
     return (
         <>
             <Header />

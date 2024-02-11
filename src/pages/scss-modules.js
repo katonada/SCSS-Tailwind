@@ -1,6 +1,6 @@
-import Layout from '../layout/MainTW.component';
+import Layout from '../layout/Main.component';
 
-import styles from './../styles/TwArticle.module.scss';
+import styles from './../styles/Article.module.scss';
 
 export default function Page() {
     return (
@@ -12,7 +12,7 @@ export default function Page() {
                     <header className={styles.article__header}>
 
                         <h1 className={styles.article__title}>
-                            Exploring the Utility-First Paradigm in Tailwind CSS using @apply
+                            Mastering Component-Scoped Styles with S/CSS Modules
                         </h1>
 
                         <img
@@ -23,24 +23,24 @@ export default function Page() {
                     </header>
 
                     <section className={styles.article__description}>
-                        Discover the flexibility and efficiency of using Tailwind CSS, a highly customizable utility-first CSS framework that allows you to build designs directly in your markup.
+                        Gain insight into S/CSS Modules and how they offer a unique solution to the scoped styling challenge in modern web development, ensuring that styles are localized to components without the risk of global side effects.
                     </section>
 
                     <section className={styles.article__content}>
                         <h2>
-                            Introduction to Tailwind
+                            The Basics of S/CSS Modules
                         </h2>
                         <p>
-                            Tailwind CSS is revolutionizing the way developers write CSS by providing a set of utility classes that can be composed to create complex designs without leaving your HTML.
+                            S/CSS Modules provide a way to encapsulate styles per component, fortifying the modular architecture of contemporary front-end frameworks. By binding styles to the components they belong to, CSS Modules help in maintaining a clean and conflict-free codebase.
                         </p>
                         <p>
-                            Instead of writing custom CSS styles, Tailwind allows for rapid UI development with its pre-defined classes. The utility-first approach minimizes the need to write custom CSS, thus speeding up the development process.
+                            The encapsulation of S/CSS Modules means that class names are scoped locally by default, not globally. This reduces the risk of naming conflicts and enhances the reusability and maintainability of components across large-scale applications.
                         </p>
                     </section>
 
                     <footer className={styles.article__footer}>
                         <small className={styles.article__footer_info}>
-                            Short content created with assistance from ChatGPT
+                            Published on 02. 02. 2024.
                         </small>
                     </footer>
                 </article>

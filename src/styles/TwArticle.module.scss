@@ -1,0 +1,55 @@
+.article {
+    @apply max-w-7xl mx-auto p-5 mt-10 mb-10 lg:grid lg:grid-cols-4 gap-5;
+
+    &__main {
+        @apply lg:col-span-3 bg-white shadow-lg rounded-lg overflow-hidden;
+    }
+
+    &__header {
+        @apply mb-4;
+    }
+
+    &__image {
+        @apply w-full h-64 object-cover object-center;
+    }
+
+    &__title {
+        @apply text-2xl font-bold text-gray-900 mb-4;
+    }
+
+    &__description {
+        @apply p-4 font-bold text-gray-600;
+    }
+
+    &__content {
+        @apply p-4;
+
+        h2 {
+            @apply text-lg font-semibold text-gray-900;
+        }
+
+        p {
+            @apply mt-4 text-base text-gray-600;
+        }
+    }
+
+    &__aside {
+        @apply lg:col-span-1 bg-white shadow-lg rounded-lg overflow-hidden lg:mt-0 mt-5;
+
+        &_content {
+            @apply p-4 flex justify-center items-center h-[600px];
+
+            &_image {
+                @apply w-full h-full object-cover object-center;
+            }
+        }
+    }
+
+    &__footer {
+        @apply mt-8 p-4;
+
+        &_info {
+            @apply text-sm text-gray-500;
+        }
+    }
+}
