@@ -1,8 +1,8 @@
-import Container from '../components/Container';
+import Layout from '../layout/Main.component';
 
 export default function Page() {
     return (
-        <Container>
+        <Layout>
             <div className="max-w-7xl mx-auto p-5 mt-10 mb-10 lg:grid lg:grid-cols-4 gap-5">
 
                 <article className="lg:col-span-3 bg-white shadow-lg rounded-lg overflow-hidden">
@@ -39,6 +39,6 @@ export default function Page() {
                     </div>
                 </aside>
             </div>
-        </Container>
+        </Layout>
     )
 }

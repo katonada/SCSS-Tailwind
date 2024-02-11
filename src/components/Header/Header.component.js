@@ -1,16 +1,34 @@
 import Link from 'next/link';
 
+import styles from './Header.module.scss';
+
 export default function Header() {
     return (
-        <header className="bg-white shadow-md py-4">
-            <div className="max-w-7xl mx-auto px-5 flex justify-between items-center">
-                <h1 className="text-xl font-bold text-gray-900">My Next.js Blog</h1>
-                <nav>
-                    <ul className="flex space-x-4">
-                        <li><Link href="/scss" className="text-gray-600 hover:text-gray-900 transition-colors">SCSS</Link></li>
-                        <li><Link href="/tailwind-inline" className="text-gray-600 hover:text-gray-900 transition-colors">Tailwind Inline</Link></li>
-                        <li><Link href="/tailwind-apply" className="text-gray-600 hover:text-gray-900 transition-colors">Tailwind Apply</Link></li>
-                        <li><Link href="/scss-tailwind" className="text-gray-600 hover:text-gray-900 transition-colors">SCSS & Tailwind</Link></li>
+        <header className={styles.header}>
+
+            <div className={styles.header__container}>
+
+                <h1 className={styles.header__title}>SCSS and Tailwind CSS: A Unified Strategy</h1>
+
+                <nav className={styles.header__nav}>
+
+                    <ul className={styles.header__list}>
+
+                        <li className={styles.header__item}>
+                            <Link href="/scss" className={styles.header__link}>SCSS</Link>
+                        </li>
+
+                        <li className={styles.header__item}>
+                            <Link href="/tailwind-inline" className={styles.header__link}>Tailwind Inline</Link>
+                        </li>
+
+                        <li className={styles.header__item}>
+                            <Link href="/tailwind-apply" className={styles.header__link}>Tailwind Apply</Link>
+                        </li>
+
+                        <li className={styles.header__item}>
+                            <Link href="/scss-tailwind" className={styles.header__link}>SCSS & Tailwind</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

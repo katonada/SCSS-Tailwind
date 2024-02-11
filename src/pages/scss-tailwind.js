@@ -1,10 +1,10 @@
-import Container from '../components/Container';
+import Layout from '../layout/Main.component';
 
 import styles from './../styles/Article.module.scss';
 
 export default function Page() {
     return (
-        <Container>
+        <Layout>
             <div className={styles.article__main}>
 
                 <article className={styles.article}>
@@ -93,6 +93,6 @@ export default function Page() {
                     </div>
                 </aside>
             </div>
-        </Container>
+        </Layout>
     );
 }
