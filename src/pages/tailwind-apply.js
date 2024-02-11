@@ -1,13 +1,13 @@
-import Layout from '../layout/Main.component';
+import Layout from '../layout/MainTW.component';
 
 import styles from './../styles/TwArticle.module.scss';
 
 export default function Page() {
     return (
         <Layout>
-            <div className={styles.article__main}>
+            <div className={styles.article}>
 
-                <article className={styles.article}>
+                <article className={styles.article__main}>
 
                     <header className={styles.article__header}>
 

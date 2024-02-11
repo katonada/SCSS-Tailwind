@@ -1,8 +1,8 @@
 .article {
-    @apply lg:col-span-3 bg-white shadow-lg rounded-lg overflow-hidden;
+    @apply max-w-7xl mx-auto p-5 mt-10 mb-10 lg:grid lg:grid-cols-4 gap-5;
 
     &__main {
-        @apply max-w-7xl mx-auto p-5 mt-10 mb-10 lg:grid lg:grid-cols-4 gap-5;
+        @apply lg:col-span-3 bg-white shadow-lg rounded-lg overflow-hidden;
     }
 
     &__header {

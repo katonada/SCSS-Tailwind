@@ -3,9 +3,9 @@ import Layout from '../layout/Main.component';
 export default function Page() {
     return (
         <Layout>
-            <div className="article__main">
+            <div className="article">
 
-                <article className="article">
+                <article className="article__main">
 
                     <header className="article__header">
 

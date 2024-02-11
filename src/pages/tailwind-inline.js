@@ -1,4 +1,4 @@
-import Layout from '../layout/Main.component';
+import Layout from '../layout/MainTW.component';
 
 export default function Page() {
     return (

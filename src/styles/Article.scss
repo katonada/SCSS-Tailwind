@@ -1,20 +1,20 @@
 .article {
-    grid-column: span 3 / span 3; // equivalent to lg:col-span-3
-    background-color: #ffffff; // bg-white
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); // shadow-lg
-    border-radius: 0.5rem; // rounded-lg
-    overflow: hidden;
+    max-width: 1280px; // equivalent to max-w-7xl
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.25rem; // equivalent to p-5
+    margin-top: 2.5rem; // equivalent to mt-10
+    margin-bottom: 2.5rem; // equivalent to mb-10
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); // lg:grid-cols-4
+    gap: 1.25rem; // gap-5
 
     &__main {
-        max-width: 1280px; // equivalent to max-w-7xl
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1.25rem; // equivalent to p-5
-        margin-top: 2.5rem; // equivalent to mt-10
-        margin-bottom: 2.5rem; // equivalent to mb-10
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr)); // lg:grid-cols-4
-        gap: 1.25rem; // gap-5
+        grid-column: span 3; // equivalent to lg:col-span-3
+        background-color: #ffffff; // bg-white
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); // shadow-lg
+        border-radius: 0.5rem; // rounded-lg
+        overflow: hidden;
     }
 
     &__header {
@@ -58,13 +58,17 @@
     }
 
     &__aside {
-        grid-column: span 1 / span 1; // lg:col-span-1
         background-color: #ffffff; // bg-white
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); // shadow-lg
         border-radius: 0.5rem; // rounded-lg
         overflow: hidden;
         margin-top: 0; // lg:mt-0
         margin-top: 1.25rem; // mt-5
+
+        @media (min-width: 1024px) {
+            grid-column: span 1;
+            margin-top: 0px;
+        }
 
         &_content {
             padding: 1rem; // p-4
