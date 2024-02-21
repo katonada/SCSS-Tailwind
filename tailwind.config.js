@@ -1,22 +1,36 @@
 module.exports = {
-  // Enable JIT mode for faster builds and smaller file sizes in development
-  mode: 'jit',
-  content: [
-      './src/pages/**/*.{js,ts,jsx,tsx}', // Path to your pages
-      './src/components/**/*.{js,ts,jsx,tsx}', // Path to your components
-  ],
-  theme: {
-    extend: {
-      // Here you can extend the default Tailwind styles,
-      // add new utilities, or override existing ones
+    mode: 'jit',
+    content: [
+        './src/pages/**/*.{js,ts,jsx,tsx}',
+        './src/components/**/*.{js,ts,jsx,tsx}',
+    ],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: 'var(--font-sans)',
+                serif: 'var(--font-serif)',
+            },
+            fontSize: {
+                base: 'var(--text-base)',
+                lg: 'var(--text-lg)',
+                xl: 'var(--text-xl)',
+            },
+            screens: {
+                md: 'var(--breakpoint-md)',
+                lg: 'var(--breakpoint-lg)',
+                xl: 'var(--breakpoint-xl)',
+            },
+            colors: {
+                primary: 'var(--color-primary)',
+                secondary: 'var(--color-secondary)',
+                news: 'var(--color-news)',
+            },
+        },
     },
-  },
-  variants: {
-    extend: {
-      // Here you can add variants to existing utilities
+    variants: {
+        extend: {
+        },
     },
-  },
-  plugins: [
-    // Here you can add any Tailwind plugins you might want to use
-  ],
+    plugins: [
+    ],
 };

@@ -1,0 +1,26 @@
+/* styles/globals.css */
+:root {
+  /* Light mode variables */
+  --font-sans: 'Helvetica', 'Arial', sans-serif;
+  --font-serif: 'Georgia', serif;
+
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-news: #ff8000;
+}
+
+.dark {
+  /* Dark mode variables */
+  --color-primary: #0d6efd; /* Darker shade for dark mode */
+  --color-secondary: #495057; /* Darker shade for dark mode */
+  --color-news: #623100;
+  /* Other dark mode variables... */
+}

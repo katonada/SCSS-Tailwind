@@ -1,0 +1,20 @@
+/* styles/mixins.scss */
+$breakpoints: (
+  'sm': 'screen and (min-width: var(--breakpoint-sm))',
+  'md': 'screen and (min-width: var(--breakpoint-md))',
+  'lg': 'screen and (min-width: var(--breakpoint-lg))',
+  'xl': 'screen and (min-width: var(--breakpoint-xl))',
+  '2xl': 'screen and (min-width: var(--breakpoint-2xl))',
+);
+
+@mixin media($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+
+  @if $query {
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @warn "No breakpoint defined for `#{$breakpoint}` in the `$breakpoints` map.";
+  }
+}

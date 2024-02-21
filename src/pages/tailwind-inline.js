@@ -8,7 +8,7 @@ export default function Page() {
                 <article className="lg:col-span-3 bg-white shadow-lg rounded-lg overflow-hidden">
 
                     <header className='mb-4'>
-                        <h1 className="text-2xl font-bold text-gray-900 mb-4">Exploring the Utility-First Paradigm in Tailwind CSS</h1>
+                        <h1 className="text-2xl font-bold text-news mb-4">Exploring the Utility-First Paradigm in Tailwind CSS</h1>
                         <img className="w-full h-64 object-cover object-center" src="https://via.placeholder.com/1000x600" alt="Tailwind CSS Image"/>
                     </header>
 
